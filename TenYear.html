@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="author" content="zl & yxx"/>
+	<meta name="description" content="基于bs设计的'我们这十年'主题活动网页"/>
+	<title>我们这十年</title>
+	
+	<!-- 第三方css -->
+	<link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" />
+	<link rel="stylesheet" href="./assets/vendor/glightbox/css/glightbox.min.css" />
+	<link rel="stylesheet" href="./assets/vendor/aos/aos.css" />
+	
+	<!-- 自定义css -->
+	<link rel="stylesheet" href="./assets/css/header.css" />
+	<link rel="stylesheet" href="./assets/css/main.css" />
+	<link rel="stylesheet" href="./assets/css/timeline-6.css" />
+</head>
+<body>
+	<!-- 设置header外部属性 -->
+	<!-- 前三个class都是bs属性，最后一个是自定义属性 -->
+	<header id="header" class="fixed-top d-flex align-items-center header-transparent">
+		<!-- 设置header内部的属性 -->
+		<!-- 四个都是bs属性 -->
+		<div class="container d-flex justify-content-between align-items-center">
+			<!-- 设置logo-->
+			<div id="logo">
+				<!-- <h1><a href="#">我们这十年</a></h1> -->
+				<!-- 南京农业大学 img -->
+				<a href="http://www.njau.edu.cn" target="_blank"><img src="./assets/img/TenYearLogo.png" alt="南京农业大学"/></a>
+			</div>	
+			
+			<!-- 导航栏 -->
+			<nav class="navbar" id="navbar">
+				<!-- 网页端 -->
+				<!-- 基于bootstrap的图标库 -->
+				<ul>
+					<li><a class="nav-link scrollto active" href="#home">Home</a></li>
+					<li><a class="nav-link scrollto" href="#total">Total</a></li>
+					<li><a class="nav-link scrollto" href="#timeline">时间线</a></li>
+					<li class="dropdown"><a class="nav-link scrollto" href="#features" ><span>特征</span><i class="bi bi-chevron-down"></i></a>
+						<ul>
+							<li><a class="nav-link scrollto" href="#" >Feature 1</a></li>
+							<li class="dropdown"><a href="#"><span>Feature 2</span> <i class="bi bi-chevron-right"></i></a>
+							<ul>
+								<li><a class="nav-link scrollto" href="#">Feature 2-1</a></li>
+								<li><a class="nav-link scrollto" href="#">Feature 2-2</a></li>
+								<li><a class="nav-link scrollto" href="#">Feature 2-3</a></li>
+								<li><a class="nav-link scrollto" href="#">Feature 2-4</a></li>
+								<li><a class="nav-link scrollto" href="#">Feature 2-5</a></li>
+							</ul>
+							</li>
+							<li><a class="nav-link scrollto" href="#">Feature 3</a></li>
+							<li><a class="nav-link scrollto" href="#">Feature 4</a></li>
+							<li><a class="nav-link scrollto" href="#">Feature 5</a></li>
+						</ul>
+					</li>
+					<li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+					<li><a class="nav-link scrollto" href="#team">Team</a></li>
+					<li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
+				</ul>
+				<!-- 手机端-->
+				<!-- 基于bootstrap的图标库 -->
+				<!-- 前两个是bs图标库，后一个属性基于视口宽度确定图标的出现和消失 -->
+				<i class="bi bi-list mobile-nav-toggle"></i>
+			</nav>			
+		</div>
+	</header>
+	<!-- 结束header标签 -->
+	
+	<!-- 回到顶部按钮 -->
+	<!-- 基于bootstrap的图标库 -->
+	<a href="#" class="back-to-top fixed-bottom d-flex align-items-center justify-content-center"><i class="bi bi-chevron-up"></i></a>
+	<!-- 结束回到顶部按钮 -->
+
+	<!-- home 版块-->
+	<section id="home">
+		<div class="home-text" data-aos="zoom-out">
+			<h2>南京农业大学“我们这十年”主题活动</h2>
+			<p>这是关于我国农业发展，关于南农建设的过去十年!</p>
+			<a href="#total" class="btn-get-started scrollto breathe-div" style="letter-spacing: 0">Get Started</a>
+		</div>
+
+		<div class="product-screens">
+
+			<div class="product-screen-1" data-aos="fade-up" data-aos-delay="400">
+			<img src="./assets/img/home2.png" alt="">
+			</div>
+
+			<div class="product-screen-2" data-aos="fade-up" data-aos-delay="200">
+			<img src="./assets/img/home3.png" alt="">
+			</div>
+
+			<div class="product-screen-3" data-aos="fade-up">
+			<img src="./assets/img/home1.png" alt="">
+			</div>
+
+		</div>
+	</section>
+	<!-- 结束 home 版块-->
+	
+	<!-- main标签所有板块 -->
+	<main id="main">
+		<!-- total 版块 -->
+		<section id="total" class="section-bg">
+			<!-- container-fluid 100%width -->
+			<div class="container-fluid" data-aos="fade-up" data-aos-anchor-placement="center-top top-bottom">
+				<div class="section-header">
+					<h3 class="section-title">Total</h3>
+					<span class="section-divider"></span>
+					<p class="section-description">
+						XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX<br>
+						XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+					</p>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-6 total-img" data-aos="fade-right" data-aos-delay="100">
+						<img src="./assets/img/temp/about-img.jpg" alt="" >
+					</div>
+
+					<div class="col-lg-6 content" data-aos="fade-left" data-aos-delay="100">
+						<h2>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</h2>
+						<h3>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</h3>
+						<p>
+							XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+						</p>
+
+						<ul>
+							<li><i class="bi bi-check-circle"></i> XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</li>
+							<li><i class="bi bi-check-circle"></i> XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</li>
+							<li><i class="bi bi-check-circle"></i> XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</li>
+						</ul>
+
+						<p>
+							XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 结束 total 版块 -->
+
+		<!-- timeline 版块 -->
+		<section id=timeline>
+			<div class="section-header" data-aos="fade-up">
+				<h3 class="section-title">Timeline</h3>
+				<span class="section-divider"></span>
+				<p class="section-description">
+					XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+				</p>
+			</div>
+			<div class="demo-card-wrapper" data-aos="fade-up">
+				<div class="demo-card demo-card--step1" data-aos="fade-right">
+					<div class="head">
+						<div class="number-box">
+							<span>01</span>
+						</div>
+						<h2><span class="small">Subtitle</span> Technology</h2>
+					</div>
+					<div class="body">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+						<img src="./assets/img/temp/gallery/gallery-1.jpg" alt="Graphic">
+					</div>
+				</div>
+
+				<div class="demo-card demo-card--step2" data-aos="fade-left"> 
+					<div class="head">
+						<div class="number-box">
+							<span>02</span>
+						</div>
+						<h2><span class="small">Subtitle</span> Confidence</h2>
+					</div>
+					<div class="body">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+						<img src="./assets/img/temp/gallery/gallery-2.jpg" alt="Graphic">
+					</div>
+				</div>
+
+				<div class="demo-card demo-card--step3" data-aos="fade-right">
+					<div class="head">
+						<div class="number-box">
+							<span>03</span>
+						</div>
+						<h2><span class="small">Subtitle</span> Adaptation</h2>
+					</div>
+					<div class="body">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+						<img src="./assets/img/temp/gallery/gallery-3.jpg" alt="Graphic">
+					</div>
+				</div>
+
+				<div class="demo-card demo-card--step4" data-aos="fade-left">
+					<div class="head">
+						<div class="number-box">
+							<span>04</span>
+						</div>
+						<h2><span class="small">Subtitle</span> Consistency</h2>
+					</div>
+					<div class="body">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+						<img src="./assets/img/temp/gallery/gallery-4.jpg" alt="Graphic">
+					</div>
+				</div>
+
+				<div class="demo-card demo-card--step5" data-aos="fade-right">
+					<div class="head">
+						<div class="number-box">
+							<span>05</span>
+						</div>
+						<h2><span class="small">Subtitle</span> Conversion</h2>
+					</div>
+					<div class="body">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+						<img src="./assets/img/temp/gallery/gallery-5.jpg" alt="Graphic">
+					</div>
+				</div>
+
+				<div class="demo-card demo-card--step6" data-aos="fade-left">
+					<div class="head">
+						<div class="number-box">
+							<span>06</span>
+						</div>
+						<h2><span class="small">Subtitle</span> Conversion</h2>
+					</div>
+					<div class="body">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+						<img src="./assets/img/temp/gallery/gallery-6.jpg" alt="Graphic">
+					</div>
+				</div>
+   
+		    
+			</div>
+		</section>		
+		<!-- timeline版块 -->
+		<!-- feature 版块 -->
+		<section id="features">
+			<div class="container" data-aos="fade-up">
+				<div class="row">
+					<div class="col-lg-8 offset-lg-4">
+						<div class="section-header">
+							<h3 class="section-title">Product Featuress</h3>
+							<span class="section-divider"></span>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-5 features-img">
+						<img src="./assets/img/temp/product-features.png" alt="" data-aos="fade-right">
+					</div>
+					<div class="col-lg-8 col-md-7 ">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 box" data-aos="fade-up">
+								<div class="icon"><i class="bi bi-briefcase"></i></div>
+								<h4 class="title"><a href="">XXXX</a></h4>
+								<p class="description">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXX</p>
+							</div>
+							<div class="col-lg-6 col-md-6 box" data-aos="fade-up">
+								<div class="icon"><i class="bi bi-card-checklist"></i></div>
+								<h4 class="title"><a href="">XXXX</a></h4>
+								<p class="description">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXX</p>
+							</div>
+							<div class="col-lg-6 col-md-6 box" data-aos="fade-up" data-aos-delay="100">
+								<div class="icon"><i class="bi bi-binoculars"></i></div>
+								<h4 class="title"><a href="">XXXX</a></h4>
+								<p class="description">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXX</p>
+							</div>
+							<div class="col-lg-6 col-md-6 box" data-aos="fade-up" data-aos-delay="100">
+								<div class="icon"><i class="bi bi-brightness-high"></i></div>
+								<h4 class="title"><a href="">XXXX</a></h4>
+								<p class="description">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXX</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+			<!-- sub-feature 版块 -->
+			<section id="advanced-features">
+
+				<div class="features-row section-bg" data-aos="fade-up">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12">
+								<!-- <img class="advanced-feature-img-right fadeInRight" src="./assets/img/temp/advanced-feature-1.jpg" alt=""> -->
+								<canvas id="figure2" width=600 height=400 class="advanced-feature-img-right"></canvas>
+								<div>
+									<h2>Duis aute irure dolor in reprehenderit in voluptate velit esse</h2>
+									<h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+									<p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="features-row" data-aos="fade-up">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<img class="advanced-feature-img-left" src="./assets/img/temp/advanced-feature-2.jpg" alt="">
+								<div>
+									<h2>Duis aute irure dolor in reprehenderit in voluptate velit esse</h2>
+									<i class="bi bi-calendar4-week"></i>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+									<i class="bi bi-bar-chart"></i>
+									<p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+									<i class="bi bi-brightness-high"></i>
+									<p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="features-row section-bg" data-aos="fade-up">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<!-- <img class="advanced-feature-img-right  fadeInRight" src="./assets/img/temp/advanced-feature-3.jpg" alt=""> -->
+								<canvas id="figure1" width=600 height=400 class="advanced-feature-img-right"></canvas>
+							
+								<div>
+									<h2>Duis aute irure dolor in reprehenderit in voluptate velit esse</h2>
+									<h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+									<i class="bi bi-binoculars"></i>
+									<p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- 结束 sub-feature 版块 -->
+		<!-- 结束 feature 版块 -->
+
+		<!-- Gallery 版块 -->
+		<section id="gallery">
+			<div class="container-fluid" data-aos="fade-up">
+				<div class="section-header">
+					<h3 class="section-title">Gallery</h3>
+					<span class="section-divider"></span>
+					<p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+				</div>
+
+				<div class="row g-0">
+
+					<div class="col-lg-4 col-md-6">
+						<div class="gallery-item">
+							<a href="./assets/img/data.png" data-gall="portfolioGallery" class="gallery-lightbox">
+								<img src="./assets/img/data.png" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6">
+						<div class="gallery-item">
+							<a href="./assets/img/data2.png" data-gall="portfolioGallery" class="gallery-lightbox">
+								<img src="./assets/img/data2.png" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6">
+						<div class="gallery-item">
+							<a href="./assets/img/data.png" data-gall="portfolioGallery" class="gallery-lightbox">
+								<img src="./assets/img/data.png" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6">
+						<div class="gallery-item">
+							<a href="./assets/img/data2.png" data-gall="portfolioGallery" class="gallery-lightbox">
+								<img src="./assets/img/data2.png" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6">
+						<div class="gallery-item">
+							<a href="./assets/img/data.png" data-gall="portfolioGallery" class="gallery-lightbox">
+								<img src="./assets/img/data.png" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6">
+						<div class="gallery-item">
+							<a href="./assets/img/data2.png" data-gall="portfolioGallery" class="gallery-lightbox">
+								<img src="./assets/img/data2.png" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6">
+						<div class="gallery-item">
+							<a href="./assets/img/data.png" data-gall="portfolioGallery" class="gallery-lightbox">
+								<img src="./assets/img/data.png" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6">
+						<div class="gallery-item">
+							<a href="./assets/img/data2.png" data-gall="portfolioGallery" class="gallery-lightbox">
+								<img src="./assets/img/data2.png" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6">
+						<div class="gallery-item">
+							<a href="./assets/img/data.png" data-gall="portfolioGallery" class="gallery-lightbox">
+								<img src="./assets/img/data.png" alt="">
+							</a>
+						</div>
+					</div>					
+				</div>
+
+			</div>
+		</section>		
+		<!-- 结束 Gallery 版块 -->
+
+		<!-- Team 版块 -->
+		<section id="team" class="section-bg">
+			<div class="container" data-aos="fade-up">
+				<div class="section-header">
+					<h3 class="section-title">Our Team</h3>
+					<span class="section-divider"></span>
+					<p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="member">
+							<div class="pic"><img src="./assets/img/temp/team/team-1.jpg" alt=""></div>
+							<h4>张三</h4>
+							<span>Chief Executive Officer</span>
+							<div class="social">
+								<a href=""><i class="bi bi-twitter"></i></a>
+								<a href=""><i class="bi bi-facebook"></i></a>
+								<a href=""><i class="bi bi-instagram"></i></a>
+								<a href=""><i class="bi bi-linkedin"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="member">
+							<div class="pic"><img src="./assets/img/temp/team/team-2.jpg" alt=""></div>
+							<h4>李四</h4>
+							<span>Product Manager</span>
+							<div class="social">
+								<a href=""><i class="bi bi-twitter"></i></a>
+								<a href=""><i class="bi bi-facebook"></i></a>
+								<a href=""><i class="bi bi-instagram"></i></a>
+								<a href=""><i class="bi bi-linkedin"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="member">
+							<div class="pic"><img src="./assets/img/temp/team/team-3.jpg" alt=""></div>
+							<h4>王五</h4>
+							<span>CTO</span>
+							<div class="social">
+								<a href=""><i class="bi bi-twitter"></i></a>
+								<a href=""><i class="bi bi-facebook"></i></a>
+								<a href=""><i class="bi bi-instagram"></i></a>
+								<a href=""><i class="bi bi-linkedin"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="member">
+							<div class="pic"><img src="./assets/img/temp/team/team-4.jpg" alt=""></div>
+							<h4>马六</h4>
+							<span>Accountant</span>
+							<div class="social">
+								<a href=""><i class="bi bi-twitter"></i></a>
+								<a href=""><i class="bi bi-facebook"></i></a>
+								<a href=""><i class="bi bi-instagram"></i></a>
+								<a href=""><i class="bi bi-linkedin"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- 结束 Team 版块 -->
+
+		<!-- FAQ 版块 -->
+		<section id="faq">
+			<div class="container" data-aos="fade-up">
+				<div class="section-header">
+					<h3 class="section-title">常见问题</h3>
+					<span class="section-divider"></span>
+					<p class="section-description">以下是本作品常见问题总结和免责声明</p>
+				</div>
+				<!-- 基于bundle.js的collapse实现下拉菜单 -->
+				<ul class="faq-list">
+					<li>
+					<div data-bs-toggle="collapse" class="collapsed question" href="#faq1">本作品使用了哪些素材？<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+					<div id="faq1" class="collapse" data-bs-parent=".faq-list">
+						<p>
+							本作品布局思路借鉴此网站部分模板(https://bootstrapmade.com/)，部分页面布局基于Bootstrap 5组件库(https://github.com/twbs/bootstrap)，动画效果基于AOS组件库(https://github.com/michalsnik/aos)，lightbox效果基于glightbox插件(https://github.com/biati-digital/glightbox)，timeline效果基于此案例(https://codepen.io/paulhbarker/pen/apvGdv)。
+						</p>
+					</div>
+					</li>
+
+					<li>
+					<div data-bs-toggle="collapse" href="#faq2" class="collapsed question">是否支持响应式布局？<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+					<div id="faq2" class="collapse" data-bs-parent=".faq-list">
+						<p>
+							是。本作品基于Bootstrap进行布局，当屏幕宽度小于800像素时，网页布局会转变为移动端，但会丢失部分PC端的布局信息。此外，本作品不能保证大于27寸屏幕的浏览体验。
+						</p>
+					</div>
+					</li>
+
+					<li>
+					<div data-bs-toggle="collapse" href="#faq3" class="collapsed question">本作品数据来源？<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+					<div id="faq3" class="collapse" data-bs-parent=".faq-list">
+						<p>
+							本作品论文统计数据基于web of science(http://webofscience.com)的SCI和SSCI数据库进行检索，检索条件：address设为china，affiliation设为各高校英文名，date-range设为2011/01/01~2021/12/31。年度统计数据来源于国家统计局(https://data.stats.gov.cn/)，时间为最近10年。
+						</p>
+					</div>
+					</li>
+
+					<li>
+					<div data-bs-toggle="collapse" href="#faq4" class="collapsed question">免责声明<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+					<div id="faq4" class="collapse" data-bs-parent=".faq-list">
+						<p>
+							该作品所用素材均在素材使用许可范围内，本人声明该作品仅限用于南京农业大学研究生网络文化节 “我们这十年”活动。
+						</p>
+						<p>
+							本作品严禁他人用于其他活动或进行私自转载。若存在前述行为，其产生的未知侵权后果由侵权者自行承担。
+						</p>
+					</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- 结束 FAQ 版块 -->
+	</main>
+	<!-- 结束 main 所有section 版块 -->
+	
+	<!-- footer 标签 -->
+	<footer id="footer" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+		<div class="container">
+			<div class="row">
+				<!-- 不同屏幕尺寸不同对齐方式 -->
+				<div class="col-lg-6 text-lg-start text-center">
+					<div>
+						<span>&copy; Copyright  2022 <strong>南京农业大学</strong>.</span>&nbsp;&nbsp;
+						<span> All Rights Reserved</span>
+					</div>
+
+					<div class="credits">
+							<span>邮编：210095</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span>地址：中国南京卫岗1号</span><br>
+							Made for NJAU <a href="http://www.njau.edu.cn" target="_blank">南京农业大学</a>
+					</div>
+				</div>
+		        <div class="col-lg-6">
+		          <nav class="contact footer-links">
+					<a href="https://weibo.com/njauxcb" target="_blank"><img src="./assets/img/新浪微博.png" alt="新浪微博" /></a>
+					<a class="wechat"><img src="./assets/img/腾讯微信.png" alt="微信" /></a>
+					<img class="fixed-bottom accounts" src="./assets/img/公众号.png" alt="微信公众号">
+		          </nav>
+		        </div>
+	        </div>
+		</div>
+		
+	</footer>
+	<!-- footer 标签 -->
+
+
+	<script src="./assets/vendor/jquery/jquery-3.6.0.min.js"></script>
+	<script src="./assets/vendor/aos/aos.js"></script>
+	<!-- FAQ下拉-->
+	<script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
+	<script src="./assets/vendor/echarts-5.3.2/dist/echarts.min.js"></script>
+	<script src="./assets/js/main.js"></script>
+	<script src="./assets/js/plot.js"></script>
+</body>
+</html>

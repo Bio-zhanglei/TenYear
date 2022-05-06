@@ -1,0 +1,316 @@
+/*这里我改为了1200px,与main.css一致*/
+@media (min-width:1200px) {
+  #timeline .demo-card:nth-child(even) .head::after, #timeline .demo-card:nth-child(odd) .head::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+  }
+
+  #timeline .demo-card:nth-child(even) .head::before, #timeline .demo-card:nth-child(odd) .head::before {
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-color: #bdbdbd;
+    border-radius: 9px;
+    box-shadow: 0px 0px 2px 8px #f7f7f7;
+  }
+}
+/* 盒子的排布，按照列进行增序(如下) */
+/*1 4*/
+/*2 5*/
+/*3 6*/
+/* 所以第二个出现的盒子应该是4*/
+.demo-card:nth-child(1) {
+  order: 1;
+}
+
+.demo-card:nth-child(2) {
+  order: 4;
+}
+
+.demo-card:nth-child(3) {
+  order: 2;
+}
+
+.demo-card:nth-child(4) {
+  order: 5;
+}
+
+.demo-card:nth-child(5) {
+  order: 3;
+}
+
+.demo-card:nth-child(6) {
+  order: 6;
+}
+
+/* 盒子模型 */
+/** {
+  box-sizing: border-box;
+}*/
+/*将timeline内部所有都设为border-box*/
+/*border-box意味着子容器的padding和border的厚度都算在50%之内，这样，你可以随意的修改padding和border的厚度值，根本不用担心父容器被撑爆。*/
+#timeline, #timeline * {
+  box-sizing: border-box;
+}
+
+/* 字体 */
+/*body {
+  font-family: Roboto;
+}
+*/
+/*60px与main.css保持一致*/
+#timeline {
+  padding: 60px 0;
+  background: #eff5f5;
+/*  border-top: 1px solid rgba(191, 191, 191, 0.4);
+  border-bottom: 1px solid rgba(191, 191, 191, 0.4);*/
+}
+
+/*这个我去除了，用的是main.css的title模板*/
+/*#timeline h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+*/
+/*#timeline p.leader {
+  text-align: center;
+  max-width: 90%;
+  margin: auto;
+  margin-bottom: 45px;
+}*/
+
+/*大盒子(所有小盒子)的边框*/
+#timeline .demo-card-wrapper {
+  position: relative;
+  margin: auto;
+}
+
+/*大于1000px，大盒子的高度*/
+/*若小盒子的height，这里的height要增加，盒子数*每个小盒子增加高度的一半*/
+@media (min-width:1200px) {
+  #timeline .demo-card-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    width: 1170px;
+    height: 1950px;
+    margin: 0 auto;
+  }
+}
+/*缩小后的分割线*/
+#timeline .demo-card-wrapper::after {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 1px solid rgba(191, 191, 191, 0.4);
+}
+/*大于1000px的分割线*/
+@media (min-width:1200px) {
+  #timeline .demo-card-wrapper::after {
+    border-left: 1px solid #bdbdbd;
+  }
+}
+/*缩小后的图片间隔*/
+#timeline .demo-card {
+  position: relative;
+  display: block;
+  margin: 10px auto 80px;
+  max-width: 94%;
+  z-index: 2;
+}
+/*大于480px的背影*/
+@media (min-width: 480px) {
+  #timeline .demo-card {
+    max-width: 60%;
+    box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
+  }
+}
+/*在480~800px之间我们设置一个图片的拉伸，这样看起来更自然*/
+/*这里我将720px改为了800px，与main.css一致*/
+/*当然可以不要*/
+@media (min-width:800px) {
+  #timeline .demo-card {
+    max-width: 40%;
+    box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
+  }
+}
+/*设置大于1000px的盒子的样式*/
+/*这里可以设置小盒子的高度height，记得要修改另外两个height*/
+@media (min-width:1200px) {
+  #timeline .demo-card {
+    max-width: 450px;
+    height: 500px;
+    margin: 90px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+
+  #timeline .demo-card:nth-child(odd) {
+    margin-right: 45px;
+  }
+
+  #timeline .demo-card:nth-child(odd) .head::after {
+    border-left-width: 15px;
+    border-left-style: solid;
+    left: 100%;
+  }
+
+  #timeline .demo-card:nth-child(odd) .head::before {
+    left: 491.5px;
+  }
+
+  #timeline .demo-card:nth-child(even) {
+    margin-left: 45px;
+  }
+
+  #timeline .demo-card:nth-child(even) .head::after {
+    border-right-width: 15px;
+    border-right-style: solid;
+    right: 100%;
+  }
+
+  #timeline .demo-card:nth-child(even) .head::before {
+    right: 489.5px;
+  }
+
+  #timeline .demo-card:nth-child(2) {
+    margin-top: 180px;
+  }
+}
+/*每个盒子的头部的设定*/
+#timeline .demo-card .head {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: 400;
+}
+/*每个盒子的编号的设定*/
+#timeline .demo-card .head .number-box {
+  display: inline;
+  float: left;
+  margin: 15px;
+  padding: 10px;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.17);
+}
+/*头部文字主标题的设定*/
+#timeline .demo-card .head h2 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: inherit;
+  letter-spacing: 2px;
+  margin: 0;
+  padding-bottom: 6px;
+  line-height: 1rem;
+}
+/*大于480px的头部文字主标题设定*/
+@media (min-width: 480px) {
+  #timeline .demo-card .head h2 {
+    font-size: 165%;
+    line-height: 1.2rem;
+  }
+}
+
+/*头部文字副标题设定*/
+#timeline .demo-card .head h2 span {
+  display: block;
+  font-size: 0.6rem;
+  margin: 0;
+}
+/*大于480px的头部文字副标题设定*/
+@media (min-width: 480px) {
+  #timeline .demo-card .head h2 span {
+    font-size: 0.8rem;
+  }
+}
+
+/*每个盒子的边框设定*/
+#timeline .demo-card .body {
+  background: #fff;
+  border: 1px solid rgba(191, 191, 191, 0.4);
+  border-top: 0;
+  padding: 15px;
+}
+
+/*大于1000px时，盒子的高度设定*/
+/*这里就是要height增加的差值*/
+@media (min-width:1200px) {
+  #timeline .demo-card .body {
+    height: 415px;
+  }
+}
+
+/*盒子内文字的描述内容设定*/
+#timeline .demo-card .body p {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+
+/*盒子内图片的设定*/
+#timeline .demo-card .body img {
+  display: block;
+  width: 100%;
+}
+
+/*以下是盒子的背景颜色，增加盒子需要自己设定颜色*/
+/*颜色是每四个一个循环*/
+#timeline .demo-card--step1 {
+  background-color: #46b8e9;
+}
+
+#timeline .demo-card--step1 .head::after {
+  border-color: #46b8e9;
+}
+
+#timeline .demo-card--step2 {
+  background-color: #3ee9d1;
+}
+
+#timeline .demo-card--step2 .head::after {
+  border-color: #3ee9d1;
+}
+
+#timeline .demo-card--step3 {
+  background-color: #ce43eb;
+}
+
+#timeline .demo-card--step3 .head::after {
+  border-color: #ce43eb;
+}
+
+#timeline .demo-card--step4 {
+  background-color: #4d92eb;
+}
+
+#timeline .demo-card--step4 .head::after {
+  border-color: #4d92eb;
+}
+
+#timeline .demo-card--step5 {
+  background-color: #46b8e9;
+}
+
+#timeline .demo-card--step5 .head::after {
+  border-color: #46b8e9;
+}
+
+#timeline .demo-card--step6 {
+  background-color: #3ee9d1;
+}
+
+#timeline .demo-card--step6 .head::after {
+  border-color: #3ee9d1;
+}
