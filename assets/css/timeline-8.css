@@ -96,7 +96,7 @@
     display: flex;
     flex-flow: column wrap;
     width: 1170px;
-    height: 2140px;
+    height: 2540px;
     margin: 0 auto;
   }
 }
@@ -135,7 +135,7 @@
 @media (min-width:1200px) {
   #timeline .demo-card {
     max-width: 450px;
-    height: 400px;
+    height: 500px;
     margin: 90px;
     margin-top: 45px;
     margin-bottom: 45px;
@@ -216,7 +216,7 @@
 }
 @media (min-width:1200px) {
   #timeline .demo-card .body {
-    height: 315px;
+    height: 415px;
   }
 }
 #timeline .demo-card .body p {

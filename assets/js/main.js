@@ -124,6 +124,7 @@
       // 计算滚动距离
       // 根据所点击的导航标签的href属性值(定位标签)，计算其距离其父元素(这里是body)的高度
       let elementPos = select(element).offsetTop
+
       window.scrollTo({
         top: elementPos - offset,
         behavior: 'smooth'
