@@ -424,47 +424,115 @@ display: inline-block;
 }
 /*gallery 版块*/
 
-/*team 版块*/
-#team {
-  padding: 60px 0 0 0;
+/*people 版块*/
+#people{
+  padding: 60px 120px;
   overflow: hidden;
+  background-color: white;
 }
-#team .member {
-  text-align: center;
-  margin-bottom: 20px;
+#people .section-description{
+  padding-bottom: 0px;
 }
-#team .member .pic {
-  margin-bottom: 15px;
-  overflow: hidden;
-  height: 260px;
+
+.img-bg {
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center center;
 }
-#team .member .pic img {
-  max-width: 100%;
+.img-bg, .img-bg:hover{
+  color:white;
 }
-#team .member h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 18px;
+
+@media (max-width: 768px) {
+  .img-bg {
+    height: 400px;
+  }
+  #people{
+  padding: 60px 0;
 }
-#team .member span {
-  font-style: italic;
-  display: block;
-  font-size: 13px;
 }
-#team .member .social {
-  margin-top: 15px;
+.img-bg:before {
+  position: absolute;
+  content: "";
+  background: black;
+  background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.5;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  top: 0;
 }
-#team .member .social a {
-  color: #b3b3b3;
+.img-bg .img-bg-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  position: relative;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-bottom: 50px;
 }
-#team .member .social a:hover {
-  color: #1dc8cd;
+@media (max-width: 768px) {
+  .img-bg .img-bg-inner {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 50px;
+  }
 }
-#team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
+.img-bg .img-bg-inner h2, .img-bg .img-bg-inner p {
+  color: var(--color-white);
+}
+@media (max-width: 500px) {
+  .img-bg .img-bg-inner p {
+    display: none;
+  }
+}
+
+.custom-swiper-button-next,
+.custom-swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9;
+}
+@media (max-width: 768px) {
+  .custom-swiper-button-next,
+.custom-swiper-button-prev {
+    display: none;
+  }
+}
+.custom-swiper-button-next span,
+.custom-swiper-button-prev span {
+  font-size: 20px;
+  color: rgba(white, 0.7);
+  transition: 0.3s all ease;
+}
+.custom-swiper-button-next:hover span, .custom-swiper-button-next:focus span,
+.custom-swiper-button-prev:hover span,
+.custom-swiper-button-prev:focus span {
+  color: white;
+}
+
+.custom-swiper-button-next {
+  right: 40px;
+}
+
+.custom-swiper-button-prev {
+  left: 40px;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: rgba(white, 0.8);
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: white;
 }
 /*team 版块*/
+#timeline {
+  background-color: #eff5f5;
+}
 
 /*FAQ 版块*/
 #faq {
@@ -526,3 +594,4 @@ display: inline-block;
 }
 /*FAQ 版块
 /*---------main section---------*/
+
