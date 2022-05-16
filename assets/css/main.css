@@ -426,7 +426,7 @@ display: inline-block;
 
 /*people 版块*/
 #people{
-  padding: 60px 120px;
+  padding: 60px 20% 120px 25%;
   overflow: hidden;
   background-color: white;
 }
@@ -435,7 +435,7 @@ display: inline-block;
 }
 
 .img-bg {
-  height: 500px;
+  height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
