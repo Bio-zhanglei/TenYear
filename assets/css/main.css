@@ -445,7 +445,7 @@ display: inline-block;
   color:white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .img-bg {
     height: 400px;
   }
@@ -474,7 +474,7 @@ display: inline-block;
   padding-right: 100px;
   margin-bottom: 50px;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .img-bg .img-bg-inner {
     padding-left: 30px;
     padding-right: 30px;
@@ -497,7 +497,7 @@ display: inline-block;
   transform: translateY(-50%);
   z-index: 9;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .custom-swiper-button-next,
 .custom-swiper-button-prev {
     display: none;
